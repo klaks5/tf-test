@@ -1,0 +1,11 @@
+vpc_cidr_block           = "10.0.0.0/16"
+azs                      = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
+private_subnets          = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+public_subnets           = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+destination_cidr_block   = "0.0.0.0/0"
+sg_cidr_block            = ["0.0.0.0/0"]
+web_image_id             = "ami-0799864fea10a5ee8"
+web_instance_type        = "t2.micro"
+web_asg_desired_capacity = 2
+web_asg_max_size         = 3
+web_asg_min_size         = 2
